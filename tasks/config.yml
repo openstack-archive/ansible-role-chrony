@@ -1,0 +1,15 @@
+---
+- name: Install chrony configuration file
+  template:
+    src: chrony.conf.j2
+    dest: "{{ chrony_config_file_location }}"
+    owner: root
+    group: root
+    mode: 0644
+  notify: Restart chronyd
+
+- name: Ensure chronyd is running
+  service:
+    name: "{{ chrony_service_name }}"
+    state: "{{ chrony_service_state|default('started') }}"
+  when: chrony_manage_service|bool

@@ -1,0 +1,15 @@
+---
+chrony_debug: False
+chrony_role_action: install
+chrony_ntp_servers: []
+chrony_ntp_pools: []
+chrony_ntp_peers: []
+chrony_bind_addresses:
+    - 127.0.0.1
+    - ::1
+chrony_acl_rules: []
+chrony_service_name: chronyd
+chrony_manage_service: True
+chrony_manage_package: True
+chrony_service_state: started
+chrony_extra_options: []

@@ -1,0 +1,6 @@
+---
+- name: Install chronyd package
+  package:
+    name: "{{ chrony_package_name }}"
+    state: present
+  when: chrony_manage_package|bool

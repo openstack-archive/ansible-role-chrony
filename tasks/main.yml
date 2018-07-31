@@ -1,0 +1,19 @@
+---
+- name: Load distro-specific variables
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_distribution }}.yml"
+    - "{{ ansible_os_family }}.yml"
+    - default.yml
+
+- name: Install chronyd
+  include_tasks: install.yml
+  when: chrony_role_action in ['all', 'install']
+
+- name: Upgrade chronyd
+  include_tasks: upgrade.yml
+  when: chrony_role_action in ['upgrade']
+
+- name: Configure chronyd
+  include_tasks: config.yml
+  when: chrony_role_action in ['all', 'config']
