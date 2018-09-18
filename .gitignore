@@ -17,7 +17,7 @@ lib/
 lib64/
 sdist/
 var/
-container_registry.egg-info/
+ansible_role_chrony.egg-info/
 .installed.cfg
 *.egg
 
