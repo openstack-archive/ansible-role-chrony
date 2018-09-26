@@ -50,7 +50,7 @@ Role Variables
        the appropriate data. If this is a list of hostnames, the `chrony_global_server_settings`
        will be appended to the configuration.
    * - `chrony_global_server_settings`
-     - ''
+     - `<none>`
      - Default setting to apply to the servers configuration
    * - `chrony_ntp_pools`
      - `[]`
@@ -59,7 +59,7 @@ Role Variables
        the appropriate data. If this is a list of hostnames, the `chrony_global_pool_settings`
        will be appended to the configuration.
    * - `chrony_global_pool_settings`
-     - ''
+     - `<none>`
      - Default setting to apply to the pools configuration
    * - `chrony_ntp_peers`
      - `[]`
@@ -68,7 +68,7 @@ Role Variables
        the appropriate data. If this is a list of hostnames, the `chrony_global_peer_settings`
        will be appended to the configuration.
    * - `chrony_global_peer_settings`
-     - ''
+     - `<none>`
      - Default setting to apply to the peers configuration
    * - `chrony_bind_addresses`
      - `['127.0.0.1', '::1']`
