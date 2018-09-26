@@ -1,4 +1,4 @@
 [gerrit]
 host=review.openstack.org
 port=29418
-project=openstack/ansible-role-tripleo-chrony.git
+project=openstack/ansible-role-chrony.git
