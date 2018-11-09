@@ -1,12 +1,6 @@
 ---
 chrony_package_name: chrony
 chrony_service_name: chronyd
-chrony_ntp_servers:
-    - 0.rhel.pool.ntp.org
-    - 1.rhel.pool.ntp.org
-    - 2.rhel.pool.ntp.org
-    - 3.rhel.pool.ntp.org
-chrony_global_server_settings: iburst
 chrony_config_file_location: /etc/chrony.conf
 chrony_driftfile_path: /var/lib/chrony/drift
 chrony_logdir_path: /var/log/chrony
