@@ -1,8 +1,9 @@
 ---
 chrony_debug: False
 chrony_role_action: install
+chrony_global_server_settings: iburst
 chrony_ntp_servers: []
-chrony_ntp_pools: []
+chrony_ntp_pools: ['pool.ntp.org']
 chrony_ntp_peers: []
 chrony_bind_addresses:
     - 127.0.0.1
