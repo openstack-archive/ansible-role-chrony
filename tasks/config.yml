@@ -11,6 +11,7 @@
 
 - name: Ensure chronyd is running
   service:
+    enabled: yes
     name: "{{ chrony_service_name }}"
     state: "{{ chrony_service_state|default('started') }}"
   when: chrony_manage_service|bool
