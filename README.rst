@@ -84,7 +84,7 @@ Role Variables
      - The chrony makestep configuration
    * - `chrony_extra_options`
      - `[]`
-     - A list of extra option strings that is added to the end of the configuraiton file. This list is joined with new lines.
+     - A list of extra option strings that is added to the end of the configuration file. This list is joined with new lines.
 
 
 Requirements
