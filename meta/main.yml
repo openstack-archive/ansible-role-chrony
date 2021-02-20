@@ -1,5 +1,6 @@
 galaxy_info:
-  author: OpenStack
+  role_name: chrony
+  author: tripleo
   description:  chrony role
   company: Red Hat
   license: Apache 2.0
