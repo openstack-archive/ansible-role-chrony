@@ -17,3 +17,7 @@
 - name: Configure chronyd
   include_tasks: config.yml
   when: chrony_role_action in ['all', 'config']
+
+- name: Enable online service
+  include_tasks: online.yml
+  when: chrony_role_action in ['all', 'online']

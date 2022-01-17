@@ -18,7 +18,7 @@ Role Variables
      - Enable debug option in chrony
    * - `chrony_role_action`
      - `all`
-     - Ansible action when including the role. Should be one of: [all|install|config|upgrade]
+     - Ansible action when including the role. Should be one of: [all|install|config|upgrade|online]
    * - `chrony_package_name`
      - `chrony`
      - chrony system package name
