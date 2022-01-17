@@ -2,11 +2,15 @@
     check:
       jobs:
         - openstack-tox-linters
-        - tripleo-ci-centos-7-standalone
+        - tripleo-ci-centos-8-standalone:
+            dependencies:
+              - openstack-tox-linters
     gate:
       jobs:
         - openstack-tox-linters
-        - tripleo-ci-centos-7-standalone
+        - tripleo-ci-centos-8-standalone:
+            dependencies:
+              - openstack-tox-linters
     post:
       jobs:
         - publish-openstack-python-branch-tarball
