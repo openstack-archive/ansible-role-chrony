@@ -5,10 +5,16 @@
         - tripleo-ci-centos-8-standalone:
             dependencies:
               - openstack-tox-linters
+        - tripleo-ci-centos-9-standalone:
+            dependencies:
+              - openstack-tox-linters
     gate:
       jobs:
         - openstack-tox-linters
         - tripleo-ci-centos-8-standalone:
+            dependencies:
+              - openstack-tox-linters
+        - tripleo-ci-centos-9-standalone:
             dependencies:
               - openstack-tox-linters
     post:
