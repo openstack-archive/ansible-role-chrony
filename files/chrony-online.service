@@ -5,7 +5,7 @@ Wants=network-online.target chronyd.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/libexec/chrony-helper command online
+ExecStart=/usr/bin/chronyc online
 User=root
 
 [Install]
