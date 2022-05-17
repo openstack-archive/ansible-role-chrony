@@ -14,16 +14,9 @@
 # # License for the specific language governing permissions and limitations
 # # under the License.
 
-
 - name: Load distro-specific variables
-  include_tasks: vars.yml
-
-- name: Install chrony configuration file
-  template:
-    src: chrony.conf.j2
-    dest: "{{ chrony_config_file_location }}"
-    owner: root
-    group: root
-    mode: 0644
-  register: chrony_config
-  notify: Restart chronyd
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_facts['distribution'] }}.yml"
+    - "{{ ansible_facts['os_family'] }}.yml"
+    - default.yml
