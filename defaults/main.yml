@@ -1,6 +1,6 @@
 ---
 chrony_debug: False
-chrony_role_action: install
+chrony_role_action: all
 chrony_global_server_settings: iburst
 chrony_ntp_servers: []
 chrony_ntp_pools: ['pool.ntp.org']
