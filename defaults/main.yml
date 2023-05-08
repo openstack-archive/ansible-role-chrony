@@ -19,3 +19,4 @@ chrony_manage_service: True
 chrony_manage_package: True
 chrony_service_state: started
 chrony_extra_options: []
+chrony_config_file_location: /etc/chrony.conf
