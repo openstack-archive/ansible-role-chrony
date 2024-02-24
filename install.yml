@@ -1,7 +1,0 @@
----
-- hosts: undercloud
-  gather_facts: true
-  become: true
-  tasks:
-      - include_role:
-          name: tripleo-chrony
